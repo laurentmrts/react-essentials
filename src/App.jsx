@@ -1,9 +1,8 @@
-import { CORE_CONCEPTS } from "./data";
 import { EXAMPLES} from "./data";
 import Header from "./components/Header/Header";
-import CoreConcept from "./components/CoreConcept";
 import TabButton from "./components/TabButton";
 import {useState} from "react";
+import CoreConcepts from "./components/CoreConcepts";
 
 function App() {
   const [selectedTopic, setSelectedTopic] = useState();
@@ -32,16 +31,7 @@ function App() {
     <>
       <Header />
       <main>
-        <section id="core-concepts">
-          <h2>Core Concepts</h2>
-          <ul>
-            {
-              CORE_CONCEPTS.map(
-                (concept) => <CoreConcept {...concept} />
-              )
-            }
-          </ul>
-        </section>
+        <CoreConcepts />
         <section id="examples">
           <h2>Examples</h2>
           <menu>
