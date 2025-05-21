@@ -29,7 +29,8 @@ export default function Examples () {
 
   return (
     <Section title="Examples" id="examples">
-      <Tabs buttons={
+      <Tabs buttonsContainer="menu" //peut aussi prendre les custom Components
+        buttons={
         // grace au chevron vide on peut passer plusieurs composants avec la synthaxe jsx
         <>
           <TabButton isSelected={selectedTopic === 'components'} onClick={() => handleClick('components')}>Components</TabButton>
