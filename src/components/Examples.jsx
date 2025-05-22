@@ -29,7 +29,7 @@ export default function Examples () {
 
   return (
     <Section title="Examples" id="examples">
-      <Tabs buttonsContainer="menu" //peut aussi prendre les custom Components
+      <Tabs //peut aussi prendre les custom Components
         buttons={
         // grace au chevron vide on peut passer plusieurs composants avec la synthaxe jsx
         <>
